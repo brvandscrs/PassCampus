@@ -1,11 +1,16 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContratController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('contrats', ContratController::class);
+Route::resource('users', UserController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
