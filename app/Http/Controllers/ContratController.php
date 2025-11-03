@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use illuminate\View\View;
 
 class ContratController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() : View
     {
-        return "Contrat index page";
+        return view('contrat.index');
     }
 
     /**
