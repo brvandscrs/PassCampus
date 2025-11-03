@@ -11,7 +11,7 @@ class ContratController extends Controller
      */
     public function index()
     {
-        //
+        return "Contrat index page";
     }
 
     /**
@@ -19,7 +19,7 @@ class ContratController extends Controller
      */
     public function create()
     {
-        //
+        return "Contrat create page";
     }
 
     /**
@@ -27,7 +27,7 @@ class ContratController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "Store new contrat";
     }
 
     /**
@@ -35,7 +35,7 @@ class ContratController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return "Showing contrat with ID: " . $id;
     }
 
     /**
@@ -43,7 +43,7 @@ class ContratController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return "Edit contrat with ID: " . $id;
     }
 
     /**
@@ -51,7 +51,7 @@ class ContratController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return "Update contrat with ID: " . $id;
     }
 
     /**
@@ -59,6 +59,6 @@ class ContratController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        return "Delete contrat with ID: " . $id;
     }
 }
