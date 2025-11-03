@@ -1,3 +1,3 @@
 <x-app-layout>
-    Liste des contrats
+    Liste des users
 </x-app-layout>
