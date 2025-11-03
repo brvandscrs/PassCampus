@@ -18,9 +18,9 @@ class ContratFactory extends Factory
     {
         return [
             'user_id' => User::inRandomOrder()->first()->id,
-            'date_debut' => fake()->date(),
-            'date_fin' => fake()->date(),
-            'montant' => fake()->randomFloat(2, 1000, 10000),
+            'date_debut' => fake()->dateTimeBetween('-6 months', 'now'),
+            'date_fin' => fake()->dateTimeBetween('now', '+6 months'),
+            'montant' => fake()->randomFloat(2, 100, 1000),
             'etat_contrat' => fake()->randomElement(['actif', 'expire', 'suspendu']),
         ];
     }
